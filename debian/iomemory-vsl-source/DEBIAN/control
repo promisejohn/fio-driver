@@ -1,0 +1,13 @@
+Package: iomemory-vsl-source
+Source: iomemory-vsl
+Version: 3.2.10.1509-1.0
+Architecture: amd64
+Maintainer: Support <support@fusionio.com>
+Installed-Size: 2383
+Depends: linux-headers, gcc, make, lsb-release
+Provides: iomemory-vsl, iomemory-vsl-3.2.10.1509, libvsl
+Section: non-free
+Priority: extra
+Homepage: http://support.fusionio.com
+Description: Source to build driver for FIO devices
+ Source to build driver for FIO devices

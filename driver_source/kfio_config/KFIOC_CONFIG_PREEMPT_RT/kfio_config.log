@@ -1,0 +1,67 @@
++ KFIOC_CONFIG_PREEMPT_RT KFIOC_CONFIG_PREEMPT_RT
++ local test_flag=KFIOC_CONFIG_PREEMPT_RT
++ local test_code=
+#ifndef CONFIG_PREEMPT_RT
+#error Not running a PREEMPT_RT kernel
+#endif
+
++ kfioc_test 
+#ifndef CONFIG_PREEMPT_RT
+#error Not running a PREEMPT_RT kernel
+#endif
+ KFIOC_CONFIG_PREEMPT_RT 1
++ local code=
+#include <linux/module.h>
+
+#ifndef CONFIG_PREEMPT_RT
+#error Not running a PREEMPT_RT kernel
+#endif
+
+
++ local kfioc_flag=KFIOC_CONFIG_PREEMPT_RT
++ local positive_result=1
++ local cflags=
++ local test_dir=/home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_CONFIG_PREEMPT_RT
++ local result=0
++ local license=
+MODULE_LICENSE("Proprietary");
+
++ mkdir -p /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_CONFIG_PREEMPT_RT
++ fio_create_makefile KFIOC_CONFIG_PREEMPT_RT 
++ local kfioc_flag=KFIOC_CONFIG_PREEMPT_RT
++ local extra_cflags=
++ cat
++ echo 
+#include <linux/module.h>
+
+#ifndef CONFIG_PREEMPT_RT
+#error Not running a PREEMPT_RT kernel
+#endif
+
+
++ [ 1 -eq 0 ]
++ echo 
+MODULE_LICENSE("Proprietary");
+
++ [ 1 -eq 0 ]
++ env -i PATH=/home/promise/.nvm/versions/node/v0.12.4/bin:/home/promise/Android/Sdk/platform-tools:/home/promise/.pyenv/shims:/home/promise/.pyenv/bin:/opt/jdk/jdk1.8.0_45/bin:/home/promise/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/promise/.rvm/bin:/home/promise/.rvm/bin make -C /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_CONFIG_PREEMPT_RT V=1
++ result=2
++ set_kfioc_status KFIOC_CONFIG_PREEMPT_RT 2 exit
++ local kfioc_flag=KFIOC_CONFIG_PREEMPT_RT
++ local value=2
++ local file=exit
++ shift 3
++ mkdir -p /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_CONFIG_PREEMPT_RT
++ printf %s\n 2
++ mv /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_CONFIG_PREEMPT_RT/exit.tmp /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_CONFIG_PREEMPT_RT/exit
++ local myflag=1
++ [ 2 != 0 ]
++ myflag=0
++ set_kfioc_status KFIOC_CONFIG_PREEMPT_RT 0 result
++ local kfioc_flag=KFIOC_CONFIG_PREEMPT_RT
++ local value=0
++ local file=result
++ shift 3
++ mkdir -p /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_CONFIG_PREEMPT_RT
++ printf %s\n 0
++ mv /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_CONFIG_PREEMPT_RT/result.tmp /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_CONFIG_PREEMPT_RT/result

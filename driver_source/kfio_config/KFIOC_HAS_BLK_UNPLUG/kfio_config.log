@@ -1,0 +1,75 @@
++ KFIOC_HAS_BLK_UNPLUG KFIOC_HAS_BLK_UNPLUG
++ local test_flag=KFIOC_HAS_BLK_UNPLUG
++ local test_code=
+#include <linux/blkdev.h>
+
+void kfioc_test_blk_unplug(void) {
+    blk_unplug(NULL);
+}
+
++ kfioc_test 
+#include <linux/blkdev.h>
+
+void kfioc_test_blk_unplug(void) {
+    blk_unplug(NULL);
+}
+ KFIOC_HAS_BLK_UNPLUG 1 -Werror-implicit-function-declaration
++ local code=
+#include <linux/module.h>
+
+#include <linux/blkdev.h>
+
+void kfioc_test_blk_unplug(void) {
+    blk_unplug(NULL);
+}
+
+
++ local kfioc_flag=KFIOC_HAS_BLK_UNPLUG
++ local positive_result=1
++ local cflags=-Werror-implicit-function-declaration
++ local test_dir=/home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_HAS_BLK_UNPLUG
++ local result=0
++ local license=
+MODULE_LICENSE("Proprietary");
+
++ mkdir -p /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_HAS_BLK_UNPLUG
++ fio_create_makefile KFIOC_HAS_BLK_UNPLUG -Werror-implicit-function-declaration
++ local kfioc_flag=KFIOC_HAS_BLK_UNPLUG
++ local extra_cflags=-Werror-implicit-function-declaration
++ cat
++ echo 
+#include <linux/module.h>
+
+#include <linux/blkdev.h>
+
+void kfioc_test_blk_unplug(void) {
+    blk_unplug(NULL);
+}
+
+
++ [ 1 -eq 0 ]
++ echo 
+MODULE_LICENSE("Proprietary");
+
++ [ 1 -eq 0 ]
++ env -i PATH=/home/promise/.nvm/versions/node/v0.12.4/bin:/home/promise/Android/Sdk/platform-tools:/home/promise/.pyenv/shims:/home/promise/.pyenv/bin:/opt/jdk/jdk1.8.0_45/bin:/home/promise/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/promise/.rvm/bin:/home/promise/.rvm/bin make -C /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_HAS_BLK_UNPLUG V=1
++ result=2
++ set_kfioc_status KFIOC_HAS_BLK_UNPLUG 2 exit
++ local kfioc_flag=KFIOC_HAS_BLK_UNPLUG
++ local value=2
++ local file=exit
++ shift 3
++ mkdir -p /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_HAS_BLK_UNPLUG
++ printf %s\n 2
++ mv /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_HAS_BLK_UNPLUG/exit.tmp /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_HAS_BLK_UNPLUG/exit
++ local myflag=1
++ [ 2 != 0 ]
++ myflag=0
++ set_kfioc_status KFIOC_HAS_BLK_UNPLUG 0 result
++ local kfioc_flag=KFIOC_HAS_BLK_UNPLUG
++ local value=0
++ local file=result
++ shift 3
++ mkdir -p /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_HAS_BLK_UNPLUG
++ printf %s\n 0
++ mv /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_HAS_BLK_UNPLUG/result.tmp /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_HAS_BLK_UNPLUG/result

@@ -1,0 +1,20 @@
++ KFIOC_NEEDS_VIRT_TO_PHYS KFIOC_NEEDS_VIRT_TO_PHYS
++ local test_flag=KFIOC_NEEDS_VIRT_TO_PHYS
++ local result=0
++ [ -d /lib/modules/3.16.0-41-generic/build/include/asm-x86_64 ]
++ set_kfioc_status KFIOC_NEEDS_VIRT_TO_PHYS 0 exit
++ local kfioc_flag=KFIOC_NEEDS_VIRT_TO_PHYS
++ local value=0
++ local file=exit
++ shift 3
++ mkdir -p /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_NEEDS_VIRT_TO_PHYS
++ printf %s\n 0
++ mv /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_NEEDS_VIRT_TO_PHYS/exit.tmp /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_NEEDS_VIRT_TO_PHYS/exit
++ set_kfioc_status KFIOC_NEEDS_VIRT_TO_PHYS 0 result
++ local kfioc_flag=KFIOC_NEEDS_VIRT_TO_PHYS
++ local value=0
++ local file=result
++ shift 3
++ mkdir -p /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_NEEDS_VIRT_TO_PHYS
++ printf %s\n 0
++ mv /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_NEEDS_VIRT_TO_PHYS/result.tmp /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_NEEDS_VIRT_TO_PHYS/result

@@ -1,0 +1,73 @@
++ KFIOC_REQUEST_QUEUE_UNPLUG_FN_HAS_EXTRA_BOOL_PARAM KFIOC_REQUEST_QUEUE_UNPLUG_FN_HAS_EXTRA_BOOL_PARAM
++ local test_flag=KFIOC_REQUEST_QUEUE_UNPLUG_FN_HAS_EXTRA_BOOL_PARAM
++ local test_code=
+#include <linux/blkdev.h>
+
+void kfioc_test_request_queue_unplug_param(blk_plug_cb_fn cb) {
+    cb(NULL, false);
+}
+
++ kfioc_test 
+#include <linux/blkdev.h>
+
+void kfioc_test_request_queue_unplug_param(blk_plug_cb_fn cb) {
+    cb(NULL, false);
+}
+ KFIOC_REQUEST_QUEUE_UNPLUG_FN_HAS_EXTRA_BOOL_PARAM 1
++ local code=
+#include <linux/module.h>
+
+#include <linux/blkdev.h>
+
+void kfioc_test_request_queue_unplug_param(blk_plug_cb_fn cb) {
+    cb(NULL, false);
+}
+
+
++ local kfioc_flag=KFIOC_REQUEST_QUEUE_UNPLUG_FN_HAS_EXTRA_BOOL_PARAM
++ local positive_result=1
++ local cflags=
++ local test_dir=/home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_REQUEST_QUEUE_UNPLUG_FN_HAS_EXTRA_BOOL_PARAM
++ local result=0
++ local license=
+MODULE_LICENSE("Proprietary");
+
++ mkdir -p /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_REQUEST_QUEUE_UNPLUG_FN_HAS_EXTRA_BOOL_PARAM
++ fio_create_makefile KFIOC_REQUEST_QUEUE_UNPLUG_FN_HAS_EXTRA_BOOL_PARAM 
++ local kfioc_flag=KFIOC_REQUEST_QUEUE_UNPLUG_FN_HAS_EXTRA_BOOL_PARAM
++ local extra_cflags=
++ cat
++ echo 
+#include <linux/module.h>
+
+#include <linux/blkdev.h>
+
+void kfioc_test_request_queue_unplug_param(blk_plug_cb_fn cb) {
+    cb(NULL, false);
+}
+
+
++ [ 1 -eq 0 ]
++ echo 
+MODULE_LICENSE("Proprietary");
+
++ [ 1 -eq 0 ]
++ env -i PATH=/home/promise/.nvm/versions/node/v0.12.4/bin:/home/promise/Android/Sdk/platform-tools:/home/promise/.pyenv/shims:/home/promise/.pyenv/bin:/opt/jdk/jdk1.8.0_45/bin:/home/promise/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/promise/.rvm/bin:/home/promise/.rvm/bin make -C /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_REQUEST_QUEUE_UNPLUG_FN_HAS_EXTRA_BOOL_PARAM V=1
++ set_kfioc_status KFIOC_REQUEST_QUEUE_UNPLUG_FN_HAS_EXTRA_BOOL_PARAM 0 exit
++ local kfioc_flag=KFIOC_REQUEST_QUEUE_UNPLUG_FN_HAS_EXTRA_BOOL_PARAM
++ local value=0
++ local file=exit
++ shift 3
++ mkdir -p /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_REQUEST_QUEUE_UNPLUG_FN_HAS_EXTRA_BOOL_PARAM
++ printf %s\n 0
++ mv /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_REQUEST_QUEUE_UNPLUG_FN_HAS_EXTRA_BOOL_PARAM/exit.tmp /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_REQUEST_QUEUE_UNPLUG_FN_HAS_EXTRA_BOOL_PARAM/exit
++ local myflag=1
++ [ 0 != 0 ]
++ set_kfioc_status KFIOC_REQUEST_QUEUE_UNPLUG_FN_HAS_EXTRA_BOOL_PARAM 1 result
++ local kfioc_flag=KFIOC_REQUEST_QUEUE_UNPLUG_FN_HAS_EXTRA_BOOL_PARAM
++ local value=1
++ local file=result
++ shift 3
++ mkdir -p /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_REQUEST_QUEUE_UNPLUG_FN_HAS_EXTRA_BOOL_PARAM
++ printf %s\n 1
++ mv /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_REQUEST_QUEUE_UNPLUG_FN_HAS_EXTRA_BOOL_PARAM/result.tmp /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_REQUEST_QUEUE_UNPLUG_FN_HAS_EXTRA_BOOL_PARAM/result

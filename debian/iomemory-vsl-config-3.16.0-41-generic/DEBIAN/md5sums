@@ -1,0 +1,4 @@
+d696e83e5ab91fde21c687a1482eeb74  usr/share/doc/iomemory-vsl-config-3.16.0-41-generic/changelog.Debian.gz
+2244cb0a427cf403c58a5ad840f08a81  usr/share/doc/iomemory-vsl-config-3.16.0-41-generic/copyright
+1a39b295a57ea5ecb4aed37a60b14ec7  usr/src/iomemory-vsl-3.2.10/Module.symvers
+44e562e9f53315c5fe0cf85120fc6470  usr/src/iomemory-vsl-3.2.10/include/fio/port/linux/kfio_config.h

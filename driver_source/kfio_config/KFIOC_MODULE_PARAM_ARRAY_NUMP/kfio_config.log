@@ -1,0 +1,65 @@
++ KFIOC_MODULE_PARAM_ARRAY_NUMP KFIOC_MODULE_PARAM_ARRAY_NUMP
++ local test_flag=KFIOC_MODULE_PARAM_ARRAY_NUMP
++ local test_code=
+const char *test[10];
+
+module_param_array(test, charp, NULL, 0);
+
++ kfioc_test 
+const char *test[10];
+
+module_param_array(test, charp, NULL, 0);
+ KFIOC_MODULE_PARAM_ARRAY_NUMP 1
++ local code=
+#include <linux/module.h>
+
+const char *test[10];
+
+module_param_array(test, charp, NULL, 0);
+
+
++ local kfioc_flag=KFIOC_MODULE_PARAM_ARRAY_NUMP
++ local positive_result=1
++ local cflags=
++ local test_dir=/home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_MODULE_PARAM_ARRAY_NUMP
++ local result=0
++ local license=
+MODULE_LICENSE("Proprietary");
+
++ mkdir -p /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_MODULE_PARAM_ARRAY_NUMP
++ fio_create_makefile KFIOC_MODULE_PARAM_ARRAY_NUMP 
++ local kfioc_flag=KFIOC_MODULE_PARAM_ARRAY_NUMP
++ local extra_cflags=
++ cat
++ echo 
+#include <linux/module.h>
+
+const char *test[10];
+
+module_param_array(test, charp, NULL, 0);
+
+
++ [ 1 -eq 0 ]
++ echo 
+MODULE_LICENSE("Proprietary");
+
++ [ 1 -eq 0 ]
++ env -i PATH=/home/promise/.nvm/versions/node/v0.12.4/bin:/home/promise/Android/Sdk/platform-tools:/home/promise/.pyenv/shims:/home/promise/.pyenv/bin:/opt/jdk/jdk1.8.0_45/bin:/home/promise/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/promise/.rvm/bin:/home/promise/.rvm/bin make -C /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_MODULE_PARAM_ARRAY_NUMP V=1
++ set_kfioc_status KFIOC_MODULE_PARAM_ARRAY_NUMP 0 exit
++ local kfioc_flag=KFIOC_MODULE_PARAM_ARRAY_NUMP
++ local value=0
++ local file=exit
++ shift 3
++ mkdir -p /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_MODULE_PARAM_ARRAY_NUMP
++ printf %s\n 0
++ mv /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_MODULE_PARAM_ARRAY_NUMP/exit.tmp /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_MODULE_PARAM_ARRAY_NUMP/exit
++ local myflag=1
++ [ 0 != 0 ]
++ set_kfioc_status KFIOC_MODULE_PARAM_ARRAY_NUMP 1 result
++ local kfioc_flag=KFIOC_MODULE_PARAM_ARRAY_NUMP
++ local value=1
++ local file=result
++ shift 3
++ mkdir -p /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_MODULE_PARAM_ARRAY_NUMP
++ printf %s\n 1
++ mv /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_MODULE_PARAM_ARRAY_NUMP/result.tmp /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_MODULE_PARAM_ARRAY_NUMP/result

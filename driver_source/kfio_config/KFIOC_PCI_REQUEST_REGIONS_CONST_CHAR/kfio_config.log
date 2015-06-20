@@ -1,0 +1,73 @@
++ KFIOC_PCI_REQUEST_REGIONS_CONST_CHAR KFIOC_PCI_REQUEST_REGIONS_CONST_CHAR
++ local test_flag=KFIOC_PCI_REQUEST_REGIONS_CONST_CHAR
++ local test_code=
+#include <linux/pci.h>
+int kfioc_pci_request_regions_const_param(void)
+{
+    return pci_request_regions(NULL, (const char *) "foo");
+}
+
++ kfioc_test 
+#include <linux/pci.h>
+int kfioc_pci_request_regions_const_param(void)
+{
+    return pci_request_regions(NULL, (const char *) "foo");
+}
+ KFIOC_PCI_REQUEST_REGIONS_CONST_CHAR 1 -Werror
++ local code=
+#include <linux/module.h>
+
+#include <linux/pci.h>
+int kfioc_pci_request_regions_const_param(void)
+{
+    return pci_request_regions(NULL, (const char *) "foo");
+}
+
+
++ local kfioc_flag=KFIOC_PCI_REQUEST_REGIONS_CONST_CHAR
++ local positive_result=1
++ local cflags=-Werror
++ local test_dir=/home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_PCI_REQUEST_REGIONS_CONST_CHAR
++ local result=0
++ local license=
+MODULE_LICENSE("Proprietary");
+
++ mkdir -p /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_PCI_REQUEST_REGIONS_CONST_CHAR
++ fio_create_makefile KFIOC_PCI_REQUEST_REGIONS_CONST_CHAR -Werror
++ local kfioc_flag=KFIOC_PCI_REQUEST_REGIONS_CONST_CHAR
++ local extra_cflags=-Werror
++ cat
++ echo 
+#include <linux/module.h>
+
+#include <linux/pci.h>
+int kfioc_pci_request_regions_const_param(void)
+{
+    return pci_request_regions(NULL, (const char *) "foo");
+}
+
+
++ [ 1 -eq 0 ]
++ echo 
+MODULE_LICENSE("Proprietary");
+
++ [ 1 -eq 0 ]
++ env -i PATH=/home/promise/.nvm/versions/node/v0.12.4/bin:/home/promise/Android/Sdk/platform-tools:/home/promise/.pyenv/shims:/home/promise/.pyenv/bin:/opt/jdk/jdk1.8.0_45/bin:/home/promise/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/promise/.rvm/bin:/home/promise/.rvm/bin make -C /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_PCI_REQUEST_REGIONS_CONST_CHAR V=1
++ set_kfioc_status KFIOC_PCI_REQUEST_REGIONS_CONST_CHAR 0 exit
++ local kfioc_flag=KFIOC_PCI_REQUEST_REGIONS_CONST_CHAR
++ local value=0
++ local file=exit
++ shift 3
++ mkdir -p /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_PCI_REQUEST_REGIONS_CONST_CHAR
++ printf %s\n 0
++ mv /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_PCI_REQUEST_REGIONS_CONST_CHAR/exit.tmp /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_PCI_REQUEST_REGIONS_CONST_CHAR/exit
++ local myflag=1
++ [ 0 != 0 ]
++ set_kfioc_status KFIOC_PCI_REQUEST_REGIONS_CONST_CHAR 1 result
++ local kfioc_flag=KFIOC_PCI_REQUEST_REGIONS_CONST_CHAR
++ local value=1
++ local file=result
++ shift 3
++ mkdir -p /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_PCI_REQUEST_REGIONS_CONST_CHAR
++ printf %s\n 1
++ mv /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_PCI_REQUEST_REGIONS_CONST_CHAR/result.tmp /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_PCI_REQUEST_REGIONS_CONST_CHAR/result

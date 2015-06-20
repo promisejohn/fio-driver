@@ -1,0 +1,14 @@
+Package: iomemory-vsl-3.16.0-41-generic
+Source: iomemory-vsl
+Version: 3.2.10.1509-1.0
+Architecture: amd64
+Maintainer: Support <support@fusionio.com>
+Installed-Size: 1844
+Conflicts: fio-driver, iodrive-driver
+Replaces: fio-driver, iodrive-driver
+Provides: iomemory-vsl, iomemory-vsl-3.2.10.1509
+Section: non-free
+Priority: extra
+Homepage: http://support.fusionio.com
+Description: Driver for FIO devices
+ Driver for FIO devices

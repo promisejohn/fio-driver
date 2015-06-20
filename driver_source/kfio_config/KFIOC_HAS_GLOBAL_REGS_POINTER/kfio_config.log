@@ -1,0 +1,73 @@
++ KFIOC_HAS_GLOBAL_REGS_POINTER KFIOC_HAS_GLOBAL_REGS_POINTER
++ local test_flag=KFIOC_HAS_GLOBAL_REGS_POINTER
++ local test_code=
+#include <asm/irq_regs.h>
+
+struct pt_regs *kfioc_set_irq_regs(void) {
+    return get_irq_regs();
+}
+
++ kfioc_test 
+#include <asm/irq_regs.h>
+
+struct pt_regs *kfioc_set_irq_regs(void) {
+    return get_irq_regs();
+}
+ KFIOC_HAS_GLOBAL_REGS_POINTER 1
++ local code=
+#include <linux/module.h>
+
+#include <asm/irq_regs.h>
+
+struct pt_regs *kfioc_set_irq_regs(void) {
+    return get_irq_regs();
+}
+
+
++ local kfioc_flag=KFIOC_HAS_GLOBAL_REGS_POINTER
++ local positive_result=1
++ local cflags=
++ local test_dir=/home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_HAS_GLOBAL_REGS_POINTER
++ local result=0
++ local license=
+MODULE_LICENSE("Proprietary");
+
++ mkdir -p /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_HAS_GLOBAL_REGS_POINTER
++ fio_create_makefile KFIOC_HAS_GLOBAL_REGS_POINTER 
++ local kfioc_flag=KFIOC_HAS_GLOBAL_REGS_POINTER
++ local extra_cflags=
++ cat
++ echo 
+#include <linux/module.h>
+
+#include <asm/irq_regs.h>
+
+struct pt_regs *kfioc_set_irq_regs(void) {
+    return get_irq_regs();
+}
+
+
++ [ 1 -eq 0 ]
++ echo 
+MODULE_LICENSE("Proprietary");
+
++ [ 1 -eq 0 ]
++ env -i PATH=/home/promise/.nvm/versions/node/v0.12.4/bin:/home/promise/Android/Sdk/platform-tools:/home/promise/.pyenv/shims:/home/promise/.pyenv/bin:/opt/jdk/jdk1.8.0_45/bin:/home/promise/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/promise/.rvm/bin:/home/promise/.rvm/bin make -C /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_HAS_GLOBAL_REGS_POINTER V=1
++ set_kfioc_status KFIOC_HAS_GLOBAL_REGS_POINTER 0 exit
++ local kfioc_flag=KFIOC_HAS_GLOBAL_REGS_POINTER
++ local value=0
++ local file=exit
++ shift 3
++ mkdir -p /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_HAS_GLOBAL_REGS_POINTER
++ printf %s\n 0
++ mv /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_HAS_GLOBAL_REGS_POINTER/exit.tmp /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_HAS_GLOBAL_REGS_POINTER/exit
++ local myflag=1
++ [ 0 != 0 ]
++ set_kfioc_status KFIOC_HAS_GLOBAL_REGS_POINTER 1 result
++ local kfioc_flag=KFIOC_HAS_GLOBAL_REGS_POINTER
++ local value=1
++ local file=result
++ shift 3
++ mkdir -p /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_HAS_GLOBAL_REGS_POINTER
++ printf %s\n 1
++ mv /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_HAS_GLOBAL_REGS_POINTER/result.tmp /home/promise/bin/fio/iomemory-vsl-3.2.10.1509/driver_source/kfio_config/KFIOC_HAS_GLOBAL_REGS_POINTER/result
